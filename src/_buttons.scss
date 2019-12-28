@@ -1,227 +1,227 @@
 .button, a.button:link, a.button:visited {
-  font-size: 0.9em;
-  font-family: inherit;
-  text-align: center;
-  text-decoration: none !important;
-  cursor: pointer;
-  display: inline-block;
+    font-size: 0.9em;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    display: inline-block;
 
-  background-color: lighten($button-primary-color, 32.5%);
+    background-color: lighten($button-primary-color, 32.5%);
 
-  color: darken($button-primary-color, 30%);
-  padding: $padding-unit*1.5 $padding-unit*3;
-  font-weight: 500;
-  border-radius: 3px;
-  border: 1px solid transparent;
-  transition: all .3s ease;
-  margin: $margin-unit * 0.5;
-
-  &:hover {
-    background-color: lighten($button-primary-color, 30%);
     color: darken($button-primary-color, 30%);
-  }
-
-  &:active, &.is-active {
-    background-color: lighten($button-primary-color, 25%);
-    color: darken($button-primary-color, 30%);
-  }
-
-  &.is-outlined {
-    background-color: #ffffff;
-    border-color: lighten($button-primary-color, 5%);
+    padding: $padding-unit*1.5 $padding-unit*3;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    margin: $margin-unit * 0.5;
 
     &:hover {
-      background-color: lighten($button-primary-color, 32.5%);
-      border-color: darken($button-primary-color, 15%);
+        background-color: lighten($button-primary-color, 30%);
+        color: darken($button-primary-color, 30%);
     }
 
     &:active, &.is-active {
-      background-color: lighten($button-primary-color, 30%);
-      border-color: darken($button-primary-color, 25%);
-    }
-  }
-
-  &.is-filled {
-    background-color: darken($button-primary-color, 15%);
-    color: white;
-
-    &:hover {
-      background-color: darken($button-primary-color, 25%);
-      color: white;
-    }
-
-    &:active, &.is-active {
-      background-color: darken($button-primary-color, 35%);
-      color: white;
-    }
-  }
-
-
-  &.is-danger {
-    background-color: lighten($button-danger-color, 32.5%);
-    color: darken($button-danger-color, 30%);
-
-    &:hover {
-      background-color: lighten($button-danger-color, 30%);
-      color: darken($button-danger-color, 30%);
-    }
-
-    &:active, &.is-active {
-      background-color: lighten($button-danger-color, 25%);
-      color: darken($button-danger-color, 30%);
+        background-color: lighten($button-primary-color, 25%);
+        color: darken($button-primary-color, 30%);
     }
 
     &.is-outlined {
-      background-color: transparent;
-      border-color: lighten($button-danger-color, 5%);
+        background-color: #ffffff;
+        border-color: lighten($button-primary-color, 5%);
 
-      &:hover {
+        &:hover {
+            background-color: lighten($button-primary-color, 32.5%);
+            border-color: darken($button-primary-color, 15%);
+        }
+
+        &:active, &.is-active {
+            background-color: lighten($button-primary-color, 30%);
+            border-color: darken($button-primary-color, 25%);
+        }
+    }
+
+    &.is-filled {
+        background-color: darken($button-primary-color, 15%);
+        color: white;
+
+        &:hover {
+            background-color: darken($button-primary-color, 25%);
+            color: white;
+        }
+
+        &:active, &.is-active {
+            background-color: darken($button-primary-color, 35%);
+            color: white;
+        }
+    }
+
+
+    &.is-danger {
         background-color: lighten($button-danger-color, 32.5%);
-        border-color: darken($button-danger-color, 15%);
-      }
+        color: darken($button-danger-color, 30%);
 
-      &:active, &.is-active {
-        background-color: lighten($button-danger-color, 30%);
-        border-color: darken($button-danger-color, 25%);
-      }
+        &:hover {
+            background-color: lighten($button-danger-color, 30%);
+            color: darken($button-danger-color, 30%);
+        }
+
+        &:active, &.is-active {
+            background-color: lighten($button-danger-color, 25%);
+            color: darken($button-danger-color, 30%);
+        }
+
+        &.is-outlined {
+            background-color: transparent;
+            border-color: lighten($button-danger-color, 5%);
+
+            &:hover {
+                background-color: lighten($button-danger-color, 32.5%);
+                border-color: darken($button-danger-color, 15%);
+            }
+
+            &:active, &.is-active {
+                background-color: lighten($button-danger-color, 30%);
+                border-color: darken($button-danger-color, 25%);
+            }
+        }
+
+        &.is-filled {
+            background-color: darken($button-danger-color, 15%);
+            color: white;
+
+            &:hover {
+                background-color: darken($button-danger-color, 25%);
+                color: white;
+            }
+
+            &:active, &.is-active {
+                background-color: darken($button-danger-color, 35%);
+                color: white;
+            }
+        }
     }
 
-    &.is-filled {
-      background-color: darken($button-danger-color, 15%);
-      color: white;
 
-      &:hover {
-        background-color: darken($button-danger-color, 25%);
-        color: white;
-      }
-
-      &:active, &.is-active {
-        background-color: darken($button-danger-color, 35%);
-        color: white;
-      }
-    }
-  }
-
-
-  &.is-muted {
-    background-color: lighten($button-muted-color, 40%);
-    color: darken($button-muted-color, 30%);
-
-    &:hover {
-      background-color: lighten($button-muted-color, 37.5%);
-      color: darken($button-muted-color, 30%);
-    }
-
-    &:active, &.is-active {
-      background-color: lighten($button-muted-color, 32.5%);
-      color: darken($button-muted-color, 30%);
-    }
-
-    &.is-outlined {
-      background-color: transparent;
-      border-color: lighten($button-muted-color, 5%);
-
-      &:hover {
+    &.is-muted {
         background-color: lighten($button-muted-color, 40%);
-        border-color: darken($button-muted-color, 15%);
-      }
+        color: darken($button-muted-color, 30%);
 
-      &:active, &.is-active {
-        background-color: lighten($button-muted-color, 35%);
-        border-color: darken($button-muted-color, 25%);
-      }
+        &:hover {
+            background-color: lighten($button-muted-color, 37.5%);
+            color: darken($button-muted-color, 30%);
+        }
+
+        &:active, &.is-active {
+            background-color: lighten($button-muted-color, 32.5%);
+            color: darken($button-muted-color, 30%);
+        }
+
+        &.is-outlined {
+            background-color: transparent;
+            border-color: lighten($button-muted-color, 5%);
+
+            &:hover {
+                background-color: lighten($button-muted-color, 40%);
+                border-color: darken($button-muted-color, 15%);
+            }
+
+            &:active, &.is-active {
+                background-color: lighten($button-muted-color, 35%);
+                border-color: darken($button-muted-color, 25%);
+            }
+        }
+
+        &.is-filled {
+            background-color: darken($button-muted-color, 10%);
+            color: white;
+
+            &:hover {
+                background-color: darken($button-muted-color, 20%);
+                color: white;
+            }
+
+            &:active, &.is-active {
+                background-color: darken($button-muted-color, 30%);
+                color: white;
+            }
+        }
     }
 
-    &.is-filled {
-      background-color: darken($button-muted-color, 10%);
-      color: white;
 
-      &:hover {
-        background-color: darken($button-muted-color, 20%);
-        color: white;
-      }
-
-      &:active, &.is-active {
-        background-color: darken($button-muted-color, 30%);
-        color: white;
-      }
+    &.is-small {
+        font-size: 0.8em;
+        padding: $padding-unit*1 $padding-unit*2;
     }
-  }
-
-
-  &.is-small {
-    font-size: 0.8em;
-    padding: $padding-unit*1 $padding-unit*2;
-  }
-  &.is-medium {
-    font-size: 1.0em;
-    padding: $padding-unit*1.75 $padding-unit*3.5;
-  }
-  &.is-large {
-    font-size: 1.1em;
-    padding: $padding-unit*2 $padding-unit*4;
-  }
-  &.is-very-large {
-    font-size: 1.2em;
-    padding: $padding-unit*2.25 $padding-unit*4.5;
-  }
-  &.is-extremely-large {
-    font-size: 1.4em;
-    padding: $padding-unit*2.5 $padding-unit*5;
-  }
-
-  &.is-close-button {
-    background-color: transparent;
-    color: #aaaaaa;
-    font-size: 25px !important;
-    padding: $padding-unit*0.5 2*$padding-unit;
-    line-height: 1;
-    margin-top: -$padding-unit;
-
-    &:hover {
-      color: #333333;
-
-      &:active {
-        background-color: rgba(0, 0, 0, 0.05);
-      }
+    &.is-medium {
+        font-size: 1.0em;
+        padding: $padding-unit*1.75 $padding-unit*3.5;
     }
-  }
+    &.is-large {
+        font-size: 1.1em;
+        padding: $padding-unit*2 $padding-unit*4;
+    }
+    &.is-very-large {
+        font-size: 1.2em;
+        padding: $padding-unit*2.25 $padding-unit*4.5;
+    }
+    &.is-extremely-large {
+        font-size: 1.4em;
+        padding: $padding-unit*2.5 $padding-unit*5;
+    }
+
+    &.is-close-button {
+        background-color: transparent;
+        color: #aaaaaa;
+        font-size: 25px !important;
+        padding: $padding-unit*0.5 2*$padding-unit;
+        line-height: 1;
+        margin-top: -$padding-unit;
+
+        &:hover {
+            color: #333333;
+
+            &:active {
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
 }
 
 .modal--header-button,
 .widget--header-button {
-  .button.is-close-button {
-    margin-top: 0;
-  }
+    .button.is-close-button {
+        margin-top: 0;
+    }
 }
 
 
 
 .button-list {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
-  &.is-without-gaps .button {
-    border-radius: 0;
-    margin: 0;
-    position: relative;
-    margin-right: -1px;
-    z-index: 0;
+    &.is-without-gaps .button {
+        border-radius: 0;
+        margin: 0;
+        position: relative;
+        margin-right: -1px;
+        z-index: 0;
 
-    &:first-of-type {
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-      left: 0;
+        &:first-of-type {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            left: 0;
+        }
+
+        &:last-of-type {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            margin-right: 0;
+        }
+
+        &:hover, &:active, &.is-active {
+            z-index: 2;
+        }
     }
-
-    &:last-of-type {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-      margin-right: 0;
-    }
-
-    &:hover, &:active, &.is-active {
-      z-index: 2;
-    }
-  }
 }

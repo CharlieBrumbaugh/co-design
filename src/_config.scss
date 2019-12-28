@@ -4,15 +4,15 @@ $font-stack-primary: "Red Hat Display", "Open Sans", "Helvetica Neue", "Helvetic
 $font-stack-code: "Consolas", "Courier New", monospace;
 
 $font-size-gradient: (
-  "small": 10px,
-  "caption": 13px,
-  "base": 16px,
-  "larger": 19px,
-  "subheading": 22px,
-  "heading": 25px,
-  "subtitle": 28px,
-  "title": 31px,
-  "display": 34px,
+"small": 10px,
+"caption": 13px,
+"base": 16px,
+"larger": 19px,
+"subheading": 22px,
+"heading": 25px,
+"subtitle": 28px,
+"title": 31px,
+"display": 34px,
 );
 
 $font-size-h1: map-get($font-size-gradient, title);
@@ -50,23 +50,23 @@ $grid-medium-to-large-breakpoint: 64rem;
 /* Color */
 
 $color-gradient-stops: (
-  "050": 30%,
-  "100": 25%,
-  "200": 15%,
-  "300": 5%,
-  "400": 0%,
-  "500": -5%,
-  "600": -15%,
-  "700": -25%,
-  "800": -35%
+"050": 30%,
+"100": 25%,
+"200": 15%,
+"300": 5%,
+"400": 0%,
+"500": -5%,
+"600": -15%,
+"700": -25%,
+"800": -35%
 );
 
 $primary-color: #4B68FF;
 $secondary-colors: (
-  "red": #FF4343,
-  "teal": #4DB6AC,
-  "yellow": #FDD835,
-  "green": #2ECC71
+"red": #FF4343,
+"teal": #4DB6AC,
+"yellow": #FDD835,
+"green": #2ECC71
 );
 $tertiary-color: #78909C;
 
