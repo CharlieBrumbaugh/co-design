@@ -23,7 +23,6 @@ $font-size-h5: map-get($font-size-gradient, caption);
 $font-size-h6: map-get($font-size-gradient, small);
 
 /* Layout */
-
 $layout-container-width: 72rem;
 
 $margin-h1: 18px 0;
@@ -38,7 +37,6 @@ $margin-p: 9px 0;
 $margin-unit: 4px;
 $padding-unit: 4px;
 
-
 /* Grid */
 $grid-column-count: 12;
 $grid-column-gap: 10px;
@@ -46,9 +44,7 @@ $grid-column-gap: 10px;
 $grid-small-to-medium-breakpoint: 32rem;
 $grid-medium-to-large-breakpoint: 64rem;
 
-
 /* Color */
-
 $color-gradient-stops: (
 "050": 30%,
 "100": 25%,
@@ -69,16 +65,13 @@ $secondary-colors: (
 "green": #2ECC71
 );
 $tertiary-color: #78909C;
-
 $link-color: #2980B9;
 $quote-color: #7f8C8D;
-
 
 /* Buttons */
 $button-primary-color: $primary-color;
 $button-danger-color: map-get($secondary-colors, "red");
 $button-muted-color: $tertiary-color;
-
 
 /* Forms */
 $form-color: $tertiary-color;

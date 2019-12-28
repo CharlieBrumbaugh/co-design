@@ -13,14 +13,18 @@
         padding-top: $i * $padding-unit;
         padding-bottom: $i * $padding-unit;
     }
+    
     .has-padding-horizontal-#{$i} {
         padding-right: $i * $padding-unit;
         padding-left: $i * $padding-unit;
     }
 
     .has-margin-top-#{$i} { margin-top: $i * $margin-unit; }
+    
     .has-margin-right-#{$i} { margin-right: $i * $margin-unit; }
+    
     .has-margin-bottom-#{$i} { margin-bottom: $i * $margin-unit; }
+    
     .has-margin-left-#{$i} { margin-left: $i * $margin-unit; }
 
     .has-margin-vertical-#{$i} {

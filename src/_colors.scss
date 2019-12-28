@@ -1,6 +1,8 @@
 @each $name, $value in map-merge($secondary-colors, (primary: $primary-color, tertiary: $tertiary-color)) {
     .has-color-#{$name} { color: $value; }
+    
     .has-background-color-#{$name} { background-color: $value; }
+    
     .has-border-color-#{$name} { border-color: $value; }
 
     @each $gk, $gp in $color-gradient-stops {
@@ -18,9 +20,13 @@
 }
 
 .has-color-white { color: white; }
+
 .has-background-color-white { background-color: white; }
+
 .has-border-color-white { border-color: white; }
 
 .has-color-black { color: black; }
+
 .has-background-color-black { background-color: black; }
+
 .has-border-color-black { border-color: black; }
